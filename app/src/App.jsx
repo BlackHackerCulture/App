@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { routes } from "./routes/routes"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import NotFound from "./pages/NotFound" // 🔹 bu muhim: alohida import
+import NotFound from "./pages/NotFound"
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -31,7 +31,6 @@ const App = () => {
             <Route key={path} path={path} element={element} />
           ))}
 
-          {/* 🔻 Bu doimo eng oxirida bo‘lishi kerak */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
