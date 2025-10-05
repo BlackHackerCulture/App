@@ -3,7 +3,8 @@ import { About } from "../pages/About"
 import { Contact } from "../pages/Contact"
 import { Login } from "../pages/Login"
 import { Register } from "../pages/Register"
-import { NotFound } from "../pages/NotFound"
+
+
 
 export const routes = [
   { path: "/", element: <Home /> },
@@ -11,5 +12,4 @@ export const routes = [
   { path: "/contact", element: <Contact /> },
   { path: "/login", element: <Login /> },
   { path: "/register", element: <Register /> },
-  { path: "*", element: <NotFound /> },
 ]
